@@ -1,9 +1,9 @@
 module.exports = {
-TOKEN: "",
+TOKEN: process.env.TOKEN,
 ownerID: [""], //write your discord user id. example: ["id"] or ["id1","id2"]
 botInvite: "", //write your discord bot invite.
 supportServer: "", //write your discord bot support server invite.
-mongodbURL: "", //write your mongodb url.
+mongodbURL: process.env.MONGO_URL, //write your mongodb url.
 status: '❤️ codeshare.me',
 commandsDir: './commands', //Please don't touch
 language: "en", //en, tr, nl, pt, fr, ar, zh_TW, it, ja
